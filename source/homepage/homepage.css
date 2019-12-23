@@ -1,0 +1,265 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: sans-serif !important;
+    box-sizing: border-box;
+    background-color:rgb(238, 239, 239,1);
+}
+.clear{
+    clear: both;
+}
+.logo{
+    height: 54.5px;
+    width: 54.5px;
+    background-color: #e0052b;
+    float: left;
+}
+.search{
+    height: 54.5px;
+    width: 300px;
+    background-color: #e0052b;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+.store-view{
+    background: grey;
+    width: 90px;
+    height: 30px;
+    position: absolute;
+    top: 12.25px;
+    left: 15px;
+    color: black;
+}
+#magnifier{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0%;
+    background-color: white;
+}
+.search-area{
+    background: white;
+    width: 180px;
+    height: 30px;
+    position: absolute;
+    top: 12.25px;
+    right: 15px;
+}
+.category{
+    float:left;
+    position: relative;
+}
+.category ul{
+    list-style-type: none;
+}
+.category ul li{
+    float: left;
+    flex-flow: row;
+    text-align: center;
+    width: fit-content;
+    padding: 4.55px 2.5px;
+}
+.category ul li:hover{
+    background-color: #e0052b;
+}
+.category ul li:hover > a{
+    color: white;
+}
+.category ul li:hover .sub-menu{
+    display: flex;
+}
+.category ul li:hover .sub-menu ul li:hover{
+    background: white;
+}
+.category ul li:hover .sub-menu ul li > a{
+    color: black;
+}
+.category ul li:hover .sub-menu ul li:hover > a{
+    color: red;
+}
+.category ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: black;
+}
+/* .category ul li:hover .sub-menu2 {
+    display: block;
+}
+.category ul li:hover .sub-menu2 ul li{
+    display: block;
+    background: white;
+}
+.category ul li:hover ul li:hover a{
+    color: red;
+} */
+.sub-menu{
+    position: absolute;
+    top: 100%;
+    width: 382px;
+    z-index: 1;
+    display: flex;
+    display: none;
+}
+.sub-menu ul{
+    background: white;
+    font-size: 0pt;
+    box-shadow: 2px 2px 5px grey;
+}
+.sub-menu ul li{
+    width: 110px;
+    padding: 5px 0px;
+    float: left;;
+    border-bottom: #e0052b 1px;
+    text-align: left;
+    margin: 5px;
+}
+.sub-menu ul li a{
+    font-weight: 600;
+    font-size: 11px;
+}
+.sub-menu1{
+    display: block;
+    position: absolute;
+    all: unset;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+}
+.sub-menu1 ul{
+    display: flex;
+    width: 100%;
+    all: unset;
+    background: inherit;
+    flex-direction: column;
+}
+.sub-menu1 ul li{
+    all: unset;
+    display: block;
+    text-align: left;
+    padding: 5px 0px;
+}
+.sub-menu1 ul li a{
+    font-weight: 500;
+    font-size: 11.5px;
+    text-transform: unset;
+}
+}
+.sub-menu2{
+    display: none
+    ;
+}
+.sub-menu2 ul {
+    font-size: 0px;
+    width: 300px;
+    background: white;
+    /* position: absolute;
+    top: 100%; */
+    z-index: 1;
+}
+.sub-menu2 ul li{
+    display: inline-block;
+    width: 140px;
+    padding: 5px 5px;
+}
+.sub-menu2 ul li a{
+    all: unset;
+    font-size: 12px;
+}
+#homepage-banner{
+    width: inherit;
+    height: 366px;
+    background: white;
+    margin-top: 5px;
+    position: relative;
+}
+.banner-image-n-switcher{
+    width: 798px;
+    height: inherit;
+    position: absolute;
+    font-size: 0px;
+}
+.banner-image{
+    width: inherit;
+    height: 300px;
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+}
+.image-switcher{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+}
+.bar{
+    display: inline-block;
+    width: 133px;
+    height: 66px;
+    text-align: center;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    font-size: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.bar span{
+    height: inherit;
+}
+.bar:hover{
+    background: #e0052b;
+    color: white;
+}
+#r1:checked .bar{
+    background: #e0052b;
+    color: white;
+}
+.slide{
+    transition: 0.6s;
+}
+#r1:checked ~ .move{
+    margin-bottom: 0;
+}
+#r2:checked ~ .move{
+    margin-bottom: -37.6%;
+}
+#r3:checked ~ .move{
+    margin-bottom: -75.2%;
+}
+#r4:checked ~ .move{
+    margin-bottom: -112.8%;
+}
+#r5:checked ~ .move{
+    margin-bottom: -150.4%;
+}
+#r6:checked ~ .move{
+    margin-bottom: -188%;
+}
+input[name="radio-button"]{
+    position: absolute;
+    visibility: hidden;
+}
+.best-promotion{
+    position: absolute;
+    right: 0px;
+    height: inherit;
+    width: 468px;
+}
+.best-promotion-top{
+    position: absolute;
+    width: 385px;
+    height: 175px;
+    right: 0;
+}
+.best-promotion-bottom{
+    position: absolute;
+    width: 385px;
+    height: 175px;
+    right: 0;
+    bottom: 0px;
+}
